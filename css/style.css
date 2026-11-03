@@ -197,6 +197,7 @@ body {
 =================================== */
 
 /* Class selector kết hợp descendant selector */
+
 .product-card .btn-add {
     margin-top: auto;
     width: 100%;
@@ -297,7 +298,20 @@ body {
 }
 
 /* ===================================
-   12. HỖ TRỢ GIẢM CHUYỂN ĐỘNG
+   12. BƯỚC 8 - CẢI THIỆN RESPONSIVE
+=================================== */
+
+/* Chuyển danh sách sản phẩm thành 1 cột
+   trên màn hình điện thoại nhỏ */
+
+@media (max-width: 420px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===================================
+   13. HỖ TRỢ GIẢM CHUYỂN ĐỘNG
 =================================== */
 
 @media (prefers-reduced-motion: reduce) {
