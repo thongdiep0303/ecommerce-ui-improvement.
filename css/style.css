@@ -171,8 +171,12 @@ body {
     margin-bottom: 16px;
 
     display: flex;
-    align-items: baseline;
-    gap: 8px;
+
+    /* Bước 5: Thực hành căn chỉnh Flexbox */
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+
     flex-wrap: wrap;
 }
 
