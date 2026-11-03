@@ -74,8 +74,8 @@ body {
     min-width: 0;
     background-color: #ffffff;
 
-    /* Bước 4: Điều chỉnh border và border-radius */
-    border: 2px solid #dbe5f2;
+    /* Bước 4: Tăng độ rõ của đường viền */
+    border: 2px solid #91b5e8;
     border-radius: 16px;
 
     overflow: hidden;
@@ -138,8 +138,8 @@ body {
 =================================== */
 
 .product-info {
-    /* Bước 4: Tăng padding từ 16px lên 20px */
-    padding: 20px;
+    /* Bước 4: Tăng padding lên 24px */
+    padding: 24px;
 
     display: flex;
     flex-direction: column;
@@ -152,8 +152,8 @@ body {
     line-height: 1.4;
     color: #222222;
 
-    /* Bước 4: Tăng margin-bottom từ 12px lên 14px */
-    margin-bottom: 14px;
+    /* Bước 4: Tăng khoảng cách dưới tên sản phẩm */
+    margin-bottom: 18px;
 
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -192,7 +192,7 @@ body {
    9. NÚT THÊM VÀO GIỎ
 =================================== */
 
-/* Bước 4: Thực hành descendant selector */
+/* Bước 4: Descendant selector */
 .product-card .btn-add {
     margin-top: auto;
     width: 100%;
@@ -202,8 +202,6 @@ body {
     color: #ffffff;
 
     border: none;
-
-    /* Bước 4: Tăng border-radius từ 6px lên 8px */
     border-radius: 8px;
 
     font-size: 14px;
