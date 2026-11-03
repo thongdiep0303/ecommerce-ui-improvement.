@@ -1,5 +1,4 @@
 
-
 /* ===================================
    1. THIẾT LẬP CSS CƠ BẢN
 =================================== */
@@ -61,13 +60,11 @@ body {
    4. CSS GRID - DANH SÁCH SẢN PHẨM
 =================================== */
 
-
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
 }
-
 
 /* ===================================
    5. BOX MODEL & FLEXBOX
@@ -77,7 +74,7 @@ body {
     min-width: 0;
     background-color: #ffffff;
 
-    /* Bước 4: Tăng độ rõ của đường viền */
+    /* Bước 4: Định dạng đường viền và bo góc */
     border: 2px solid #91b5e8;
     border-radius: 16px;
 
@@ -141,7 +138,7 @@ body {
 =================================== */
 
 .product-info {
-    /* Bước 4: Tăng padding lên 24px */
+    /* Bước 4: Điều chỉnh padding */
     padding: 24px;
 
     display: flex;
@@ -155,7 +152,7 @@ body {
     line-height: 1.4;
     color: #222222;
 
-    /* Bước 4: Tăng khoảng cách dưới tên sản phẩm */
+    /* Bước 4: Điều chỉnh margin */
     margin-bottom: 18px;
 
     display: -webkit-box;
@@ -175,7 +172,7 @@ body {
 
     display: flex;
 
-    /* Bước 5: Thực hành căn chỉnh Flexbox */
+    /* Bước 5: Căn chỉnh Flexbox */
     justify-content: space-between;
     align-items: center;
     gap: 12px;
@@ -199,7 +196,7 @@ body {
    9. NÚT THÊM VÀO GIỎ
 =================================== */
 
-/* Bước 4: Descendant selector */
+/* Class selector kết hợp descendant selector */
 .product-card .btn-add {
     margin-top: auto;
     width: 100%;
@@ -215,16 +212,20 @@ body {
     font-weight: 600;
     cursor: pointer;
 
-    transition: background-color 0.2s ease;
+    /* Bước 7: Chuyển đổi mượt khi tương tác */
+    transition:
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
-/* Hiệu ứng khi rê chuột */
+/* Bước 7: Hiệu ứng hover */
 
 .btn-add:hover {
     background-color: #0052a3;
+    box-shadow: 0 3px 8px rgba(0, 82, 163, 0.25);
 }
 
-/* Hiệu ứng khi dùng bàn phím */
+/* Bước 7: Hỗ trợ focus bằng bàn phím */
 
 .btn-add:focus-visible {
     outline: 3px solid #ff9900;
