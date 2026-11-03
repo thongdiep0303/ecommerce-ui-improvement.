@@ -73,8 +73,11 @@ body {
 .product-card {
     min-width: 0;
     background-color: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
+
+    /* Bước 4: Điều chỉnh border và border-radius */
+    border: 2px solid #dbe5f2;
+    border-radius: 16px;
+
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 
@@ -103,6 +106,8 @@ body {
     padding-top: 100%;
     background-color: #f9f9f9;
 }
+
+/* Descendant selector cho hình ảnh */
 
 .product-image img {
     position: absolute;
@@ -133,7 +138,8 @@ body {
 =================================== */
 
 .product-info {
-    padding: 16px;
+    /* Bước 4: Tăng padding từ 16px lên 20px */
+    padding: 20px;
 
     display: flex;
     flex-direction: column;
@@ -145,7 +151,9 @@ body {
     font-weight: 600;
     line-height: 1.4;
     color: #222222;
-    margin-bottom: 12px;
+
+    /* Bước 4: Tăng margin-bottom từ 12px lên 14px */
+    margin-bottom: 14px;
 
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -184,7 +192,8 @@ body {
    9. NÚT THÊM VÀO GIỎ
 =================================== */
 
-.btn-add {
+/* Bước 4: Thực hành descendant selector */
+.product-card .btn-add {
     margin-top: auto;
     width: 100%;
     padding: 10px 0;
@@ -193,7 +202,9 @@ body {
     color: #ffffff;
 
     border: none;
-    border-radius: 6px;
+
+    /* Bước 4: Tăng border-radius từ 6px lên 8px */
+    border-radius: 8px;
 
     font-size: 14px;
     font-weight: 600;
@@ -293,4 +304,3 @@ body {
         transform: none;
     }
 }
-
